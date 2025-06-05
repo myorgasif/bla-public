@@ -1,0 +1,10 @@
+# .github/workflows/call-shared.yml
+name: Use Shared Workflow
+
+on: [push]
+
+jobs:
+  call-shared:
+    uses: myorgasif/shared-workflow/.github/workflows/build.yml@main
+    with:
+      service_name: "repo-a"
